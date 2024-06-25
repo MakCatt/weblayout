@@ -1,0 +1,266 @@
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width:992px) {
+  .container {
+    max-width: 1188px;
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+
+  .hero__container {
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 126px;
+    padding-top: 115px;
+  }
+
+  .hero__btn {
+    padding: 24px 75px;
+  }
+
+  .title {
+    max-width: 385px;
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  .hero__text {
+    max-width: 345px;
+  }
+
+  .hero__picture img {
+    width: 330px;
+    min-height: 351px;
+  }
+
+  .advantages {
+    padding-bottom: 77px;
+  }
+
+  .advantages__firstblock {
+    padding-left: 240px;
+  }
+
+  .advantages__firstblock::before {
+    width: 211px;
+    min-height: 187px;
+  }
+
+  .advantages__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+  }
+
+  .advantages__descr {
+    margin-top: 0;
+  }
+
+  .teachers__list {
+    row-gap: 23px;
+  }
+
+  .cources__btn {
+    margin-top: 29px;
+    padding-left: 55.5px;
+    padding-right: 55.5px;
+  }
+}
+
+@media (max-width:767px) {
+  .container {
+    max-width: 1176px;
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+
+  .hero__container {
+    padding-top: 64px;
+  }
+
+  .hero__picture {
+    display: none;
+  }
+
+  .advantages {
+    padding-bottom: 55px;
+  }
+
+  .advantages__firstblock {
+    padding-left: 180px;
+  }
+
+  .advantages__firstblock::before {
+    width: 150px;
+    min-height: 134px;
+    margin-top: 0;
+  }
+
+  .cources__name {
+    line-height: 130%;
+    margin-bottom: 9px;
+  }
+
+  .cources__btn {
+    margin-top: 30px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media (max-width: 670px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 24px;
+    border: 2px solid currentColor;
+    border-radius: 3px;
+    color: #000;
+    background-color: transparent;
+    margin-left: 10px;
+    z-index: 100;
+  }
+
+  .burger__line {
+    background-color: currentColor;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 2px;
+    border-radius: inherit;
+  }
+
+  .nav__list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3F2AFF;
+    padding-top: 60px;
+    padding-right: 15px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .nav__list.active {
+    right: 0;
+  }
+
+  .burger__line:nth-child(1) {
+    top: 4px;
+  }
+
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .burger__line:nth-child(3) {
+    bottom: 4px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .hero__container {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 4px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 46px;
+  }
+
+  .hero__btn {
+    padding: 20px 47px;
+  }
+
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .advantages__firstblock::before {
+    display: none;
+  }
+
+  .advantages__firstblock {
+    padding: 0;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 1px;
+  }
+
+  .advantages__items {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .advantages__item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  .advantages__descr {
+    max-width: 100%;
+    margin-top: 19px;
+  }
+
+  .teachers__title {
+    font-size: 20px;
+  }
+
+  .teachers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .cources {
+    padding-top: 46px;
+    padding-bottom: 50px;
+  }
+
+  .cources__title {
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+
+  .cources__btn {
+    margin-top: 82px;
+    padding-left: 55.5px;
+    padding-right: 55.5px;
+  }
+}
