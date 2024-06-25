@@ -1,0 +1,482 @@
+@font-face {
+	font-family: 'Muller';
+	src: local('Muller-Regular'),
+		url('../fonts/MullerRegular.woff2') format('woff2'),
+		url('../fonts/MullerRegular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: local('Muller-Medium'),
+		url('../fonts/MullerMedium.woff2') format('woff2'),
+		url('../fonts/MullerMedium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Muller';
+	src: local('Muller-Bold'),
+		url('../fonts/MullerBold.woff2') format('woff2'),
+		url('../fonts/MullerBold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Muller', sans-serif; /* для примера с фонт-фейсом */
+  background: #E5E5E5;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.btn {
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  padding: 13px 20px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
+.svg {
+  margin-left: 7px;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-indent: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+/* header */
+
+.header {
+  margin-bottom: 70px;
+  padding-top: 30px;
+}
+
+/*header-upper*/
+
+.header-upper {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.header-tel {
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.header-link {
+  justify-self: flex-end;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  background: url(../images/profile_arrow.svg) no-repeat left center / 24px 24px;
+  padding-left: 29px;
+}
+
+
+/* header-lower */
+
+.header-lower {
+  padding: 14px 45px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.header-nav{
+  margin-right: auto;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-list-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.btn-header-first {
+  margin-right: 40px;
+}
+
+
+/* offers */
+
+.offers {
+  margin-bottom: 70px;
+}
+
+
+.offers-firstpart {
+  flex-direction: column;
+  width: 573px;
+  margin-right: 24px;
+}
+
+.offers-card{
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 40px 108px 40px 45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.offers-card:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.offers-firstcard {
+  background-image: url(../images/offers_1.jpg);      /* Тень на картинки пока не стал накладывать, но знаю, что можно использовать ::after */
+}
+
+.offers-secondcard{
+  background-image: url(../images/offers_2.jpg);
+}
+
+.offers-thirdcard {
+  width: 573px;
+  background-image: url(../images/offers_3.jpg);
+}
+
+
+  .offers-card-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.offers-price {
+  margin-bottom: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.third-title {
+  margin-top: 172px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.third-price {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+
+
+.offers-link {
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F0BF5F;
+}
+
+
+/* about */
+
+.about {
+  margin-bottom: 70px;
+}
+
+.about-descr {
+  max-width: 888px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+
+/* services */
+
+.services {
+  margin-bottom: 70px;
+}
+
+.services-items {
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 573px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.services-item:not(:nth-child(2n)){
+  margin-right: 24px;
+}
+
+.services-imgbox {
+  min-height: 165px;
+  background-repeat: no-repeat;
+}
+
+
+.services-img-1 {
+  background-image: url(../images/service-img1.png);
+}
+
+.services-img-2 {
+  background-image: url(../images/service-img2.png);
+}
+
+.services-img-3 {
+  background-image: url(../images/service-img3.png);
+}
+
+.services-img-4 {
+  background-image: url(../images/service-img4.png);
+}
+
+
+
+.services-descr {
+  padding: 26px 126px 35px 45px;
+}
+
+.services-link {
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+}
+
+.services-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* advantages */
+
+.advantages {
+  margin-bottom: 70px;
+}
+
+.advantages-items {
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 276px;
+  margin-bottom: 22px;
+  padding: 40px 42px 32px 45px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+
+
+.advanteges-img-1 {
+  background: url(../images/advantages_1.svg);
+}
+
+.advanteges-img-2 {
+  background: url(../images/advantages_2.svg);
+}
+
+.advanteges-img-3 {
+  background: url(../images/advantages_3.svg);
+}
+
+.advanteges-img-4 {
+  background: url(../images/advantages_4.svg);
+}
+
+.advanteges-img-5 {
+  background: url(../images/advantages_5.svg);
+}
+
+.advanteges-img-6 {
+  background: url(../images/advantages_6.svg);
+}
+
+.advanteges-img-7 {
+  background: url(../images/advantages_7.svg);
+}
+
+.advanteges-img-8 {
+  background: url(../images/advantages_8.svg);
+}
+
+.advantages-imgbox {
+  background-repeat: no-repeat;
+}
+
+.advantages-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+.advantages-imgbox {
+  height: 66px;
+}
+
+.advantages-descr {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+
+/* placement */
+
+.placement {
+  margin-bottom: 70px;
+}
+
+.placement-items {
+  flex-wrap: wrap;
+}
+
+.placement-item {
+  width: 374px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.placement-item:not(:nth-child(3n)){
+  margin-right: 24px;
+}
+
+.placement-descr {
+  padding: 32px 45px 45px;
+}
+
+
+
+.placement-num {
+  margin-right: auto;
+  max-width: 144px;
+}
+
+.placement-slog {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.placement-number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.placement-slog-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.placement-price, .placement-name {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.placement-location {
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.placement-link{
+  align-items: center;
+}
+
+.last-item {
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 27px;
+  background: url(../images/placement-img9.jpg) no-repeat center center / cover;
+}
+
+.placement-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
+}
